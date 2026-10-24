@@ -1,0 +1,26 @@
+{% extends 'layout/base.html' %}
+
+{% block title %}Đăng ký{% endblock %}
+
+{% block content%}
+<h1 class="texet-center text-success ">ĐĂNG KÝ</h1>
+<form method="post" action="/register">
+
+    <div class="form-floating mb-3 mt-3">
+        <input type="text" class="form-control" id="username" placeholder="Tên đăng nhập..." name="username">
+        <label for="username">Tên đăng nhập</label>
+    </div>
+
+    <div class="form-floating mt-3 mb-3">
+        <input type="text" class="form-control" id="password" placeholder="Mật khẩu..." name="password">
+        <label for="password">Mật khẩu</label>
+    </div>
+
+    <div class="form-floating mt-3 mb-3">
+        <input type="text" class="form-control" id="passwordcf" placeholder="Xác nhận mật khẩu..." name="passwordcf">
+        <label for="passwordcf">Xác nhận mật khẩu</label>
+    </div>
+
+    <button class="btn btn-danger">Đăng ký</button>
+</form>
+{% endblock %}
